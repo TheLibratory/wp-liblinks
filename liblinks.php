@@ -1,12 +1,13 @@
 <?php
-/* Plugin Name: LibLinks Widget
+/* Plugin Name: LibLinks Widgets
 Plugin URI:
-Description: This widget will add the common footer links required on all library sites.
-Version: 0.1
+Description: This plugin adds widgetized link lists of the required UT Library links.
+Version: 1.0
 Author: Casey Hunt
 Author URI: http://blogs.lib.utexas.edu/tis
 */
+require_once 'liblinks_functions.php';
+require 'libsocial.php';
+require 'libinfo.php';
 
-require_once 'libinfo.php';
-require_once 'libsocial.php';
 ?>
