@@ -21,13 +21,14 @@ $ll_sociallinks = array(
 ///////////////////////////////////////////////////
 class LibSocial extends WP_Widget {
      function LibSocial() {
+          global $ll_socialinfo;
           $widget_ops = array(
-          'classname' => 'LibSocial',
-          'description' => 'Widget for the common social media links as required by UT Libraries.'
+          'classname' => $ll_socialinfo["WidgetName"],
+          'description' => $ll_socialinfo["Description"]
           );
           $this->WP_Widget(
-                    'LibSocial',
-                    'Library Social Media Links Widget',
+                    $ll_socialinfo["WidgetName"],
+                    'LibLinks: '.$ll_socialinfo["Title"],
                     $widget_ops
           );
      }
